@@ -1,27 +1,30 @@
 <template>
-  <div id="app">
-    <Requests/>
-  </div>
+  <v-app>
+    <v-app-bar
+      app
+      color="primary"
+      dark
+    >
+      <v-spacer></v-spacer>
+
+    </v-app-bar>
+
+    <v-main>
+        <h1>Test</h1>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import Requests from './components/Requests.vue'
 
 export default {
   name: 'App',
-  components: {
-    Requests
-  }
-}
-</script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+  components: {
+  },
+
+  data: () => ({
+    //
+  }),
+};
+</script>
