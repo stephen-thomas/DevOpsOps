@@ -66,7 +66,7 @@ import WorldMap from './components/WorldMap.vue'
     data () {
       return {
         // The following variables hold the state for internal page routing
-        tab: null,
+        tab: 1,
         pages: [
           'Live', 'World Map', 'Request Music',
         ],
