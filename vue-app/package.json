@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@braid/vue-formulate": "^2.4.5",
+    "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "d3-geo-projection": "^3.0.0",
     "d3-scale-chromatic": "^2.0.0",
