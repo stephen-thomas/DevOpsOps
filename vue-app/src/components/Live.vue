@@ -3,16 +3,13 @@
     <v-main>
       <v-container>
         <v-layout row wrap>
-          <v-col v-for="person in team" :key="person.name">
-            <v-card class="text-center ma-3">
+          <v-col v-for="video in videoData" :key="video.id.videoId">
+            <v-card max-width="300" class="text-center ma-3">
               <v-responsive class='pt-2'>
-                <v-img>
-                  src="https://cdn.vuetifyjs.com/images/cards/cooking.png"
-                </v-img>
+                <v-img :src="video.snippet.thumbnails.high.url"></v-img>
               </v-responsive>
               <v-card-text>
-                <div class="subheading">{{person.name}}</div>
-                <div class="grey--text">{{person.job}}</div>
+                <div class="subheading">{{video.snippet.title}}</div>
               </v-card-text>
               <v-card-actions>
                 <v-btn color="grey">
@@ -29,23 +26,11 @@
 </template>
 
 <script>
+  import json from '../json/test_data.json'
   export default {
     data() {
       return {
-        team: [
-          {name:'Dominic', job:'winning'},
-          {name:'kyle', job:'running'},
-          {name:'stan', job:'jumping'},
-          {name:'Dominic', job:'winning'},
-          {name:'kyle', job:'running'},
-          {name:'stan', job:'jumping'},
-          {name:'Dominic', job:'winning'},
-          {name:'kyle', job:'running'},
-          {name:'stan', job:'jumping'},
-          {name:'Dominic', job:'winning'},
-          {name:'kyle', job:'running'},
-          {name:'stan', job:'jumping'},
-        ]
+        videoData: json.items
       }
     }
   }
