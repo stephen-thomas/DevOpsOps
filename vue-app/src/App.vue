@@ -1,10 +1,10 @@
 <template>
   <v-app>
     <!-- Header & Tab Select -->
-      <v-card color="basil">
+      <v-card img="https://ichef.bbci.co.uk/news/976/cpsprodpb/41CF/production/_109474861_angrycat-index-getty3-3.jpg">
         <v-card-title class="text-center justify-center py-6">
           <h1 class="font-weight-bold display-3 basil--text">
-            DevOpsOps
+            TopCat
           </h1>
         </v-card-title>
 
